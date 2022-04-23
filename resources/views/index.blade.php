@@ -8,6 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+    <!-- Daisy Ui Css link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.14.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Alpine Js Link -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"
       integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g=="
@@ -78,11 +83,7 @@
 
                 </div>
 
-
-                
-
             </div> <!-- container.// -->
-
 
     </section>
 
@@ -133,29 +134,64 @@
 
     <!-- Gallery Section -->
     <section class="container max-w-screen-xl px-4 mx-auto mb-28">
-        <div class="flex flex-col items-center space-y-12">
-            <h1 class="text-3xl font-semibold">Our Gallery</h1>
+
+    <!-- Medium view and beyond -->
+        <div class="flex-col items-center hidden space-y-12 md:flex">
+            <h1 class="text-4xl font-semibold lg:mt-16">Our Gallery</h1>
             <div class="justify-center hidden space-x-14 lg:space-x-24 md:flex">
                 <a class="px-6 py-2 text-xl font-semibold text-white bg-green-900 rounded-lg" href="#" >All</a>
                 <a class="px-5 py-2 text-xl text-black transition duration-700 ease-in-out rounded-lg hover:px-6 hover:py-2 hover:bg-gray-200 hover:text-gray-400" href="#" >Exterior</a>
                 <a class="px-5 py-2 text-xl text-black transition duration-700 ease-in-out rounded-lg hover:px-6 hover:py-2 hover:bg-gray-200 hover:text-gray-400" href="#" >Interior</a>
                 <a class="px-5 py-2 text-xl text-black transition duration-700 ease-in-out rounded-lg hover:px-6 hover:py-2 hover:bg-gray-200 hover:text-gray-400" href="#" >Building</a>
             </div>
-            <div class="grid grid-cols-3 gap-8">
+            <div class="grid grid-cols-3 gap-6">
                 <div class="">
-                    <img class="mb-8" src="img/gallery-1.png" alt="gallery-1">
-                    <img class="mt-" src="img/gallery-4.png" alt="gallery-4">
+                    <img class="mb-6 duration-700 transform rounded-lg hover:opacity-80 hover:translate-y-3" src="img/gallery-1.png" alt="gallery-1">
+                    <img class="duration-700 transform rounded-lg hover:opacity-80 hover:translate-y-3" src="img/gallery-4.png" alt="gallery-4">
                 </div>
                 <div class="">
-                    <img class="mb-8" src="img/gallery-2.png" alt="gallery-2">
-                    <img class="mb-8" src="img/gallery-5.png" alt="gallery-5">
-                    <img class="mt-" src="img/gallery-6.png" alt="gallery-6">
+                    <img class="mb-6 duration-700 transform rounded-lg hover:opacity-80 hover:translate-x-3" src="img/gallery-2.png" alt="gallery-2">
+                    <img class="mb-6 duration-700 transform rounded-lg hover:opacity-80 hover:translate-x-3" src="img/gallery-5.png" alt="gallery-5">
+                    <img class="duration-700 transform rounded-lg hover:opacity-80 hover:translate-x-3" src="img/gallery-6.png" alt="gallery-6">
                 </div>
                 <div class="">
-                    <img class="mb-8" src="img/gallery-3.png" alt="gallery-1">
-                    <img class="mt-" src="img/gallery-7.png" alt="gallery-1">
+                    <img class="mb-6 duration-700 transform rounded-lg hover:opacity-80 hover:translate-y-3" src="img/gallery-3.png" alt="gallery-1">
+                    <img class="duration-700 transform rounded-lg hover:opacity-80 hover:translate-y-3" src="img/gallery-7.png" alt="gallery-1">
                 </div>
             </div>
+        </div>
+
+        <!-- Small screen caroussel -->
+        <div class="block rounded-lg md:hidden">
+                
+            <h1 class="mb-8 text-4xl font-semibold text-center text-black">Our Gallery</h1>
+                
+            <div class="mb-6 carousel">
+                <div id="item1" class="flex flex-col items-center w-full carousel-item">
+                    <img src="img/gallery-1.png" class="w-5/6 rounded-lg h-60" />
+                </div> 
+                <div id="item2" class="flex flex-col items-center w-full carousel-item">
+                    <img src="img/gallery-6.png" class="w-5/6 rounded-lg h-60" />
+                </div> 
+                <div id="item3" class="flex flex-col items-center w-full carousel-item">
+                    <img src="img/gallery-2.png" class="w-5/6 rounded-lg h-60" />
+                </div>
+                <div id="item4" class="flex flex-col items-center w-full carousel-item">
+                    <img src="img/gallery-5.png" class="w-5/6 rounded-lg h-60" />
+                </div>
+                <div id="item5" class="flex flex-col items-center w-full carousel-item">
+                    <img src="img/gallery-7.png" class="w-5/6 rounded-lg h-60" />
+                </div>
+
+            </div> 
+            <div class="flex justify-center w-full gap-2 py-2">
+                <a href="#item1" class="btn btn-xs">1</a> 
+                <a href="#item2" class="btn btn-xs">2</a> 
+                <a href="#item3" class="btn btn-xs">3</a> 
+                <a href="#item4" class="btn btn-xs">4</a>
+                <a href="#item5" class="btn btn-xs">5</a>
+            </div>
+
         </div>
         
     </section>
@@ -179,11 +215,11 @@
             <div class="flex flex-col px-8 py-10 space-y-8 bg-gray-100 rounded-lg">
                 <img class="w-16 h-16" src="img/testimoni-3.png" alt="testimoni-3">
                 <span class="flex space-x-6">
-                    <img src="svg/star.svg" alt="star">
-                    <img src="svg/star.svg" alt="star">
-                    <img src="svg/star.svg" alt="star">
-                    <img src="svg/star.svg" alt="star">
-                    <img src="svg/star.svg" alt="star">
+                    <img src="svg/star.svg" alt="star" class="w-5 h-5 md:h-6 md:w-6">
+                    <img src="svg/star.svg" alt="star" class="w-5 h-5 md:h-6 md:w-6">
+                    <img src="svg/star.svg" alt="star" class="w-5 h-5 md:h-6 md:w-6">
+                    <img src="svg/star.svg" alt="star" class="w-5 h-5 md:h-6 md:w-6">
+                    <img src="svg/star.svg" alt="star" class="w-5 h-5 md:h-6 md:w-6">
                 </span>
                 <p class="text-sm text-gray-400">I recommend anyone to buy house on <br> D’house. I received great customer service <br> from the specialists who helped me.</p>
                 <h1 class="text-xl font-semibold text-black">Brooklyn Simmons</h1>
@@ -192,11 +228,11 @@
             <div class="flex flex-col px-8 py-10 space-y-8 bg-gray-100 rounded-lg">
                 <img class="w-16 h-16" src="img/testimoni-4.png" alt="testimoni-4">
                 <span class="flex space-x-6">
-                    <img src="svg/star.svg" alt="star">
-                    <img src="svg/star.svg" alt="star">
-                    <img src="svg/star.svg" alt="star">
-                    <img src="svg/star.svg" alt="star">
-                    <img src="svg/star.svg" alt="star">
+                    <img src="svg/star.svg" alt="star" class="w-5 h-5 md:h-6 md:w-6">
+                    <img src="svg/star.svg" alt="star" class="w-5 h-5 md:h-6 md:w-6">
+                    <img src="svg/star.svg" alt="star" class="w-5 h-5 md:h-6 md:w-6">
+                    <img src="svg/star.svg" alt="star" class="w-5 h-5 md:h-6 md:w-6">
+                    <img src="svg/star.svg" alt="star" class="w-5 h-5 md:h-6 md:w-6">
                 </span>
                 <p class="text-sm text-gray-400">D’house is the best property agent in the <br> world. I received great customer service <br> from the D’house agent</p>
                 <h1 class="text-xl font-semibold text-black">Ralph Edwards</h1>
@@ -275,5 +311,9 @@
 
         </div>
     </section>
+
+    <div class="text-sm text-gray-400 divider">
+        Copyright 2022 by Dr hfx.
+    </div>
 </body>
 </html>
