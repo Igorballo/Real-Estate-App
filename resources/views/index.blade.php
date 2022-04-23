@@ -7,6 +7,17 @@
     <meta name="author" content="Sammy">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"
+      integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
     
 </head>
 <body class="font-body">
@@ -21,7 +32,7 @@
                         <img src="img/navbar-logo.png" alt="Logo img" class="w-52 md:w-80 lg:w-full">
 
                         <button class="flex items-center justify-center w-10 h-10 ml-auto text-green-700 border border-green-700 rounded-md lg:hidden" @click="navbarOpen = !navbarOpen">
-                            <i data-feather="menu"></i>
+                            <img src="svg/menu.svg" alt="menu">
                         </button>
                     </div>
 
@@ -196,16 +207,72 @@
     </section>
 
     <section class="container max-w-screen-xl px-4 mx-auto mb-28">
-        <div class="px-8 pt-10 pb-24 bg-green-800 mb-28 rounded-3xl">
-            <div class="text-base text-center text-white">
-                <h1 class="mb-4 text-4xl font-semibold leading-normal">Talk to us <br> to discuss</h1>
-                <p>Need more time to discuss? Won’t worry, we are <br> ready to help you. You can fill in the column on the <br> right to book a meeting with us. Totally free.</p>
+        <div class="flex flex-col items-center px-8 pt-10 pb-16 bg-green-800 mb-28 rounded-3xl lg:flex-row lg:py-16 lg:justify-evenly ">
+            <div class="flex flex-col mb-10 text-center text-white lg:text-left">
+                <h1 class="mb-4 text-4xl font-semibold leading-normal md:text-5xl lg:mb-6 lg:text-7xl">Talk to us <br> to discuss</h1>
+                <p class="text-base md:text-xl">Need more time to discuss? Won’t worry, we are <br> ready to help you. You can fill in the column on the <br> right to book a meeting with us. Totally free.</p>
             </div>
             
-            <form class="hidden bg-white rounded-3xl md:block" action="" method="post">
-                <h1>Book a meeting</h1>
-                
+            <form class="items-start hidden pt-8 pb-6 bg-white px-7 md:w-2/3 lg:w-1/2 rounded-3xl md:flex md:flex-col md:space-y-10" action="" method="post">
+                <h1 class="mb-3 text-3xl font-semibold text-black">Book a meeting</h1>
+                <span class="w-full h-8 px-3 rounded-lg shadow-md"><input class="w-full focus:outline-none" type="text" placeholder="Full Name" name="" id=""></span>
+                <span class="w-full h-8 px-3 rounded-lg shadow-md"><input class="w-full focus:outline-none" type="text" placeholder="Email" name="" id=""></span>
+                <span class="w-full h-8 px-3 rounded-lg shadow-md"><input class="w-full focus:outline-none" type="text" placeholder="Date" name="" id=""></span>
+                <span class="w-full h-8 px-3 rounded-lg shadow-md"><input class="w-full focus:outline-none" type="text" placeholder="Virtual Meeting" name="" id=""></span>
+                <a class="w-full py-3 text-lg font-medium text-center text-white bg-green-800 rounded-xl">Booking</a>
             </form>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <section class="max-w-screen-xl px-4 mx-auto mb-8 conatainer">
+
+        <div class="flex flex-col items-center text-xl text-center text-gray-400 bg-white lg:flex-row lg:justify-between lg:text-left lg:items-start">
+            <!-- First col -->
+            <div class="flex flex-col items-center mb-16 lg:items-start">
+                <img class="mb-5" src="img/footer-logo.png" alt="footer-logo">
+                <p class="mb-10">Get your dream house with <br> D’house</p>
+                <div class="flex space-x-5">
+                    <span class="flex items-center justify-center w-12 h-12 duration-500 bg-gray-200 rounded-full hover:bg-green-800"><img class="hover:hidden" src="svg/facebook.svg" alt="facebook-logo"></span>
+                    <span class="flex items-center justify-center w-12 h-12 duration-500 bg-gray-200 rounded-full hover:bg-green-800"><img src="svg/twitter.svg" alt="twitter-logo"></span>
+                    <span class="flex items-center justify-center w-12 h-12 duration-500 bg-gray-200 rounded-full hover:bg-green-800"><img src="svg/linkedin.svg" alt="linkedin-logo"></span>
+                </div>
+            </div>
+
+            <!-- Second col -->
+            <div class="mb-16">
+                <h1 class="mb-6 text-2xl font-semibold text-black">Sitemap</h1>
+                <ul class="flex flex-col space-y-6">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Testimoni</a></li>
+                    <li><a href="#">Book a meeting</a></li>
+                </ul>
+            </div>
+
+            <!-- Third col -->
+            <div class="mb-16">
+                <h1 class="mb-6 text-2xl font-semibold text-black">Landing</h1>
+                <ul class="flex flex-col space-y-6">
+                    <li><a href="#">Mobile App</a></li>
+                    <li><a href="#">Property</a></li>
+                    <li><a href="#">Personal Website</a></li>
+                    <li><a href="#">Web Developer</a></li>
+                    <li><a href="#">Online Course</a></li>
+                    <li><a href="#">Donation</a></li>
+                </ul>
+            </div>
+
+            <!-- Fourth col -->
+            <div class="">
+                <h1 class="mb-6 text-2xl font-semibold text-black">Utility</h1>
+                <ul class="flex flex-col space-y-6">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
         </div>
     </section>
 </body>
