@@ -150,9 +150,9 @@
                     <img class="duration-700 transform rounded-lg hover:opacity-80 hover:translate-y-3" src="img/gallery-4.png" alt="gallery-4">
                 </div>
                 <div class="">
-                    <img class="mb-6 duration-700 transform rounded-lg hover:opacity-80 hover:translate-x-3" src="img/gallery-2.png" alt="gallery-2">
-                    <img class="mb-6 duration-700 transform rounded-lg hover:opacity-80 hover:translate-x-3" src="img/gallery-5.png" alt="gallery-5">
-                    <img class="duration-700 transform rounded-lg hover:opacity-80 hover:translate-x-3" src="img/gallery-6.png" alt="gallery-6">
+                    <img class="mb-6 duration-700 transform rounded-lg hover:opacity-80 hover:translate-y-3" src="img/gallery-2.png" alt="gallery-2">
+                    <img class="mb-6 duration-700 transform rounded-lg hover:opacity-80 hover:translate-y-3" src="img/gallery-5.png" alt="gallery-5">
+                    <img class="duration-700 transform rounded-lg hover:opacity-80 hover:translate-y-3" src="img/gallery-6.png" alt="gallery-6">
                 </div>
                 <div class="">
                     <img class="mb-6 duration-700 transform rounded-lg hover:opacity-80 hover:translate-y-3" src="img/gallery-3.png" alt="gallery-1">
