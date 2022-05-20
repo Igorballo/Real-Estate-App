@@ -255,7 +255,7 @@
                 <span class="w-full h-8 px-3 rounded-lg shadow-md"><input class="w-full focus:outline-none" type="text" placeholder="Email" name="" id=""></span>
                 <span class="w-full h-8 px-3 rounded-lg shadow-md"><input class="w-full focus:outline-none" type="text" placeholder="Date" name="" id=""></span>
                 <span class="w-full h-8 px-3 rounded-lg shadow-md"><input class="w-full focus:outline-none" type="text" placeholder="Virtual Meeting" name="" id=""></span>
-                <a class="w-full py-3 text-lg font-medium text-center text-white bg-green-800 rounded-xl">Booking</a>
+                <button class="w-full py-3 text-lg font-medium text-center text-white bg-green-800 transition duration-500 ease-in-out hover:bg-green-600 rounded-xl">Booking</button>
             </form>
         </div>
     </section>
@@ -282,7 +282,7 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Features</a></li>
                     <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Testimoni</a></li>
+                    <li><a href="#">Testimonial</a></li>
                     <li><a href="#">Book a meeting</a></li>
                 </ul>
             </div>
