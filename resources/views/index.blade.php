@@ -7,6 +7,7 @@
     <meta name="author" content="Sammy">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="icon" href="img/gallery-7.PNG">
 
     <!-- Daisy Ui Css link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.14.1/dist/full.css" rel="stylesheet" type="text/css" />
@@ -255,7 +256,7 @@
                 <span class="w-full h-8 px-3 rounded-lg shadow-md"><input class="w-full focus:outline-none" type="text" placeholder="Email" name="" id=""></span>
                 <span class="w-full h-8 px-3 rounded-lg shadow-md"><input class="w-full focus:outline-none" type="text" placeholder="Date" name="" id=""></span>
                 <span class="w-full h-8 px-3 rounded-lg shadow-md"><input class="w-full focus:outline-none" type="text" placeholder="Virtual Meeting" name="" id=""></span>
-                <button class="w-full py-3 text-lg font-medium text-center text-white bg-green-800 transition duration-500 ease-in-out hover:bg-green-600 rounded-xl">Booking</button>
+                <button class="w-full py-3 text-lg font-medium text-center text-white transition duration-500 ease-in-out bg-green-800 hover:bg-green-600 rounded-xl">Booking</button>
             </form>
         </div>
     </section>
